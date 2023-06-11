@@ -13,6 +13,28 @@ function PageTransitions() {
       this.classList.add('active-btn');
     });
   }
+
+  // Section Active class
+  allSections.addEventListener("click", (e) => {
+    const id = e.target.dataset.id;
+    // remove selected from the other btns
+    sectBtns.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+    e.target.classList.add("active");
+
+    // hide other sections
+    sections.forEach((section) => {
+      section.classList.remove("active");
+    });
+
+    const element = document.getElementById(id);
+    if (element) {
+      element.classList.add("active");
+    }
+  });
+
+  // Call other functions or perform additional tasks
 }
 
 PageTransitions();

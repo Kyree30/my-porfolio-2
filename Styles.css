@@ -69,7 +69,7 @@ section {
   transform: translateY(0) scale(1);
   background-color: #f08080;
 }
-/* Contorls */
+/* Controls */
 .controls {
   position: fixed;
   z-index: 10;
