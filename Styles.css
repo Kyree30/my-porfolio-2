@@ -52,22 +52,18 @@ section {
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: #d2b48c;
 }
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: #ffd700;
 }
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: #07f17c;
 }
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: #f08080;
 }
 
 .active {
@@ -118,3 +114,49 @@ section {
     }
   }
 }
+
+/* header content */
+.header-content {
+  position: relative; /* Add position relative to create a new stacking context */
+  display: flex;
+  align-items: center;
+}
+
+.left-header {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: end;
+  /* position: relative; */
+}
+
+.right-header {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem; /* Add spacing between the sections */
+  padding-bottom: 15rem;
+}
+
+.image {
+  position: relative; /* Add position relative to create a new stacking context */
+}
+
+.image img {
+  width: 30rem; /* Adjust the width to make the image smaller */
+  height: 50%; /* Adjust the height to make the image smaller */
+}
+
+.h-shape {
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color--secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  clip-path: polygon(0 0, 0% 100%, 100% 44%);
+}
+
+/* Independed components */
