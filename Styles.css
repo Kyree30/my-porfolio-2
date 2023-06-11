@@ -62,13 +62,28 @@ section {
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: #f5fffa;
+  background-color: #07f17c;
 }
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
   background-color: #f08080;
 }
+
+.active {
+  display: inline-block; /* or display: inline; */
+  animation: scaleAnim 1s ease-in-out;
+}
+
+@keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scale(0);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}
+
 /* Controls */
 .controls {
   position: fixed;

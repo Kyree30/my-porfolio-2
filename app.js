@@ -1,8 +1,7 @@
 const sections = document.querySelectorAll('.sections');
 const sectBtns = document.querySelectorAll('.controls');
 const sectBtn = document.querySelectorAll('.control');
-const allSections = document.querySelectorAll('.main-content');
-
+const allSections = document.querySelector('.main-content'); // Changed querySelectorAll to querySelector
 
 function PageTransitions() {
   // Active btn class
