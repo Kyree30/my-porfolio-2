@@ -1,68 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,400;1,700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="Styles.css">
-  <title>Document</title>
-</head Class= "main-content">
-<body class="main-content">
-  <header class="section sec1 header active" id="home">
-    <div class="header-content">
-      <div class="left-header">
-        <div class="h-shape"></div>
-        <div class="image">
-          <img src="icons/Kyree-pic.jpg" alt="dress-up">
+  <title>Kyree's Personal Porfolio</title>
+</head>
+<body>
+  <!-- <div id="header"> -->
+    <div class="container">
+      <nav>
+        <img class="logo" src="icons/Kyree.png" alt="Kyree-logo">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#"">Services</a></li>
+          <li><a href="#">Porfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>Aspiring Software Engineer<br>and IT Professional </p>
+        <h1>Hi, I'm <span>Kyree</span><br> Coleman From Georgia</h1>
+      </div>
+    </div>
+  </div>
+  <!-- -----------About----------- -->
+  <div id="about">
+    <div class="container main-body">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="icons/Kyree-pic-2.jpg" alt="" height="500px">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In aliquam sem fringilla ut morbi tincidunt augue. 
+            Felis eget nunc lobortis mattis aliquam faucibus purus. Ut morbi tincidunt augue interdum velit euismod in. 
+            Pellentesque habitant morbi tristique senectus et. Non consectetur a erat nam at. Vitae sapien pellentesque 
+            habitant morbi. Ac auctor augue mauris augue neque gravida in fermentum. Amet mauris commodo quis imperdiet massa 
+            tincidunt nunc pulvinar sapien. Vitae turpis massa sed elementum tempus egestas sed. Hac habitasse platea dictumst 
+            quisque sagittis purus. Blandit turpis cursus in hac habitasse platea dictumst. Cras adipiscing enim eu turpis 
+            egestas pretium aenean pharetra. Nibh nisl condimentum id venenatis a condimentum vitae.</p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('Skills')">Skills</p>
+              <p class="tab-links" onclick="openTab('Experience')">Experience</p>
+              <p class="tab-links" onclick="openTab('Education')">Education</p>
+            </div>
+            
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li><span>Information Technology</span><br>osTicket System and Microsoft Azure</li>
+                <li><span>Web Development</span><br>HTML, CSS AND JavaScript</li>
+                <li><span>Web</span><br>Development</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li><span>2022-2023</span><br>Buffalo Wild Wings / Janitor/Server Assistant</li>
+                <li><span>2018-2019</span><br>Waffle House / Server</li>
+                <li><span>2023-Present</span><br> EPI Bakery / Depanner</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li><span>2023</span><br>Google IT Support Professional</li>
+                <li><span>2023t</span><br>Information Technology / CourseCareer</li>
+                <li><span>N/A</span><br></li>
+              </ul>
+            </div>
         </div>
       </div>
-      <div class="right-header">
-        <h1 class="name">
-            Hi, I'm <span class="name">Kyree Coleman.</span>
-            Aspiring Software Engineer and IT Professional!
-        </h1>
-        <br>
-        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt. 
-          Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Nunc pulvinar sapien et ligula. 
-          Sed felis eget velit aliquet sagittis id consectetur purus ut. Ultrices vitae auctor eu augue. Et tortor at risus viverra adipiscing. 
-          Lobortis mattis aliquam faucibus purus in massa. Semper risus in hendrerit gravida rutrum quisque</P>
-          <br>
-          <div class="btn-con">
-            <a href="#" class="main-btn">
-              <span class="btn-text">Download CV</span>
-              <span class="btn-icon"><i class="fas fa-download"></i></i></span>
-            </a>
-          </div>
-         
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="section sec2 about" id="about" ></section>
-    <section class="section sec3 Portfolio" id="Portfolio"></section>
-    <section class="section sec4 bolgs" id="bolgs"></section>
-    <section class="section sec5 contact" id="contact"></section>
-  </main>
-
-  <div class="controls">
-    <div class="control control-1 active-btn"  data-id="home">
-      <i class='fas fa-home' style='font-size:30px;color:lightblue'></i>
-    </div>
-    <div class="control control-2 " data-id="about">
-      <i class="fa fa-user" aria-hidden="true" style="color: lightblue;"></i>
-    </div>
-    <div class="control control-3 " data-id="Portfolio">
-      <i class="fa fa-star" aria-hidden="true" style="color: lightblue;"></i>
-    </div>
-    <div class="control control-4 " data-id="bolgs">
-      <i class="fa fa-paper-plane" aria-hidden="true" style="color: lightblue;"></i>
-    </div>
-    <div class="control control-5 " data-id="contact">
-      <i class="fa fa-envelope" aria-hidden="true" style="color: lightblue;"></i>
     </div>
   </div>
   <script src="app.js"></script>

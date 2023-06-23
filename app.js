@@ -1,39 +1,14 @@
-const sections = document.querySelectorAll('.sections');
-const sectBtns = document.querySelectorAll('.controls');
-const sectBtn = document.querySelectorAll('.control');
-const allSections = document.querySelector('.main-content'); // Changed querySelectorAll to querySelector
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
 
-function PageTransitions() {
-  // Active btn class
-  for (let i = 0; i < sectBtn.length; i++) {
-    sectBtn[i].addEventListener('click', function() {
-      let currentBtn = document.querySelectorAll('.active-btn');
-      currentBtn[0].classList.remove('active-btn');
-      this.classList.add('active-btn');
-    });
+function openTab(tabname) {
+  for (var i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active-link");
   }
 
-  // Section Active class
-  allSections.addEventListener("click", (e) => {
-    const id = e.target.dataset.id;
-    // remove selected from the other btns
-    sectBtns.forEach((btn) => {
-      btn.classList.remove("active");
-    });
-    e.target.classList.add("active");
-
-    // hide other sections
-    sections.forEach((section) => {
-      section.classList.remove("active");
-    });
-
-    const element = document.getElementById(id);
-    if (element) {
-      element.classList.add("active");
-    }
-  });
-
-  // Call other functions or perform additional tasks
+  for (var i = 0; i < tabcontents.length; i++) {
+    tabcontents[i].classList.remove("active-tab");
+  }
+    event.currentTarget.classList.add("active-link")
+    document.getElementById(tabname).classList.add("active-tab")
 }
-
-PageTransitions();
